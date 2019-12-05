@@ -1,0 +1,29 @@
+<div style="width:800px;margin:auto;">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <label for="userName">Username</label>
+            <input type="text" class="form-control" name="userName" [(ngModel)]="user.name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label for="password">Password</label>
+            <input type="text" class="form-control" name="password" [(ngModel)]="user.password">
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-button (click)="onSave()">LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
