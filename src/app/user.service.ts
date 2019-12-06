@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-  url = "http://localhost:5000/user"
+  url = "http://localhost:4000/api/user"
   constructor(private http: HttpClient) { }
 
   saveUSer(data) {
